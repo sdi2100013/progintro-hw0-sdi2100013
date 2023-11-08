@@ -30,9 +30,9 @@ int main(int argc, char **argv){
 			dig = n;
 			if(dig == bignum){       	    // in many sequences the numbers are reapeting them selfs 3:3 10 5 16 8 4 2 1
 				seqf = seqf + bseq;        //                                                       10: 10 5 16 8 4 2 1 
-				continue;                 // so we don't have to count the bigestnum with the bigest sequence(since the number we have on test)
-			}                                //you can also observe tha the bigest sequnces has this property like ine 1-10: 9: 9 28 14 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
-			if(dig % 2 == 0){               // but as we see to count the sequence of 9 we have already sount ths sequence of seven 7: 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
+				continue;                 //so we don't have to count the bigestnum with the bigest sequence(since the number we have on test) for the begining
+			}                                //you can also observe tha the bigest sequnces has this property like in 1-10: 9: 9 28 14 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
+			if(dig % 2 == 0){               // but as we see to count the sequence of 9 we have already count the sequence of seven 7: 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
 				n/=2;                  // so acording this we could write imediatly the sequence of 9 like 9 : 9 28 14 +sequence(7) and avoid all the extra calculations
 				seqf++;	
 			}
