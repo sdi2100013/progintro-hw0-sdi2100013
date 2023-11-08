@@ -28,7 +28,7 @@ int main(int argc, char **argv){
 		while(n > 2){					
 			dig = n;
 			if(dig == bignum){       	    // in many sequences the numbers are reapeting them selfs 3:3 10 5 16 8 4 2 1
-				seqf = seqf + bseq;        //                                                       10: 10 5 16 8 4 2 1 
+				seqf = seqf + bseq -1;     //                                                       10: 10 5 16 8 4 2 1 
 				continue;                 //so we don't have to count the bigestnum with the bigest sequence(since the number we have on test) for the begining
 			}                                //you can also observe tha the bigest sequnces has this property like in 1-10: 9: 9 28 14 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
 			if(dig % 2 == 0){               // but as we see to count the sequence of 9 we have already count the sequence of seven 7: 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
@@ -54,5 +54,6 @@ int main(int argc, char **argv){
 			 }	 
 	}
 	printf(" \n bigest seq is %d ", seq);
+	return 0;
 }
 
