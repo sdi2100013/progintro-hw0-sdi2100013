@@ -2,7 +2,6 @@
 #include<stdlib.h>
 
 
-
 int main(int argc, char **argv){
 	if (argc != 3) {
 		printf("You may better try tow numbers like : 12 289\n");
